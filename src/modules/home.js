@@ -31,7 +31,7 @@ export default function Home(){
             <section id="home-section">
                 <div id="home-subsection1">
                     <div id="text-subsection">
-                        <p><link href="">Créez votre protefeuille maintenant</link><i class="fa-arrow-right"></i></p> 
+                        <p><a href="">Créez votre protefeuille maintenant</a><i class="fa-arrow-right"></i></p> 
                         <br/>
                         <h1>Achetez et vendez des crypto-monnaies</h1>
                         <br/> 
