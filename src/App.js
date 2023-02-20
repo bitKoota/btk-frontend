@@ -1,7 +1,7 @@
 import React, {BrowserRouter, Route, Routes} from "react-router-dom"; 
 import Home from "./pages/home/home";
 import HeroSection from "./pages/home/heroSection";
-import FeatureListWithImage from "./pages/home/featureSection1";
+import FeatureListWithImage from "./pages/home/featureSectionWithImage";
 
 // The APP module handles routing
 
