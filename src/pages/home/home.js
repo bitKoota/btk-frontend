@@ -1,20 +1,21 @@
 import React, {useState } from "react"; 
-import Nav from "../../components/nav"; 
-import Input from "@mui/material/Input"; 
-import Button from "@mui/material/Button";
-import WalletHome from "./../assets/img/wallet_home.png";
-import ChartHome from "./../assets/img/char_home.png";
-import ChartSVG from "./../assets/svg/chart_icon.svg";
-import ShieldSVG from "./../assets/svg/shield_icon.svg";
-import PhoneSVG from "./../assets/svg/phone_icon.svg";
-import EyeSVG from "./../assets/svg/eye_icon.svg"; 
-import CashStackSVG from "./../assets/svg/cash_stack_icon.svg";
-import HandCashSVG from "./../assets/svg/hand_cash_icon.svg";
-import AccountProfileSVG from "./../assets/svg/account_profile_icon.svg";
-import GlobeSVG from "./../assets/svg/globe_icon.svg";
-import BankSVG from "./../assets/svg/bank_icon.svg"; 
 
-import { Divider } from "@mui/material";
+
+import Nav from "../../components/navigation"; 
+import ChartHome from "../../assets/img/chart_home.png";
+import ChartSVG from "../../assets/svg/chart_icon.svg";
+import ShieldSVG from "../../assets/svg/shield_icon.svg";
+import PhoneSVG from "../../assets/svg/phone_icon.svg";
+import EyeSVG from "../../assets/svg/eye_icon.svg"; 
+import CashStackSVG from "../../assets/svg/cash_stack_icon.svg";
+import HandCashSVG from "../../assets/svg/hand_cash_icon.svg";
+import AccountProfileSVG from "../../assets/svg/account_profile_icon.svg";
+import GlobeSVG from "../../assets/svg/globe_icon.svg";
+import BankSVG from "../../assets/svg/bank_icon.svg"; 
+
+
+import Layout from "../../components/layout";
+
 
 export default function Home(){
     
@@ -25,8 +26,9 @@ export default function Home(){
         console.log("Button start clicked");
     }
     
+
     return (
-        <div id="container">
+        <Layout>
             <Nav/>
             <section id="home-section">
                 <div id="home-subsection1">
@@ -40,19 +42,11 @@ export default function Home(){
                     </div>
                     <div id="email-subsection">
                         {/* TODO: FILL THESE MATERIAL COMPONENTS*/}
-                        <Input 
-                            variant="text"
-                            onTextChanged={setEmail}
-                        />
-                        <Button
-                            className="primary" 
-                            text="Commencer" 
-                            onClick={onStartButtonClick}
-                        />
+
                     </div>
                 </div>
                 <div id="home-subsection2">
-                    <img id="wallet-home" src={WalletHome} alt="wallet_pic"/>
+                    <img id="wallet-home"  alt="wallet_pic"/>
                 </div>
             </section>
 
@@ -139,12 +133,12 @@ export default function Home(){
                         <img src={AccountProfileSVG} alt="account_profile"/> 
                         <p>Créez votre compte</p>
                     </div>
-                    <Divider/>
+
                     <div class="column-list-item">
                         <img src={BankSVG} alt="bank"/>
                         <p>Connectez votre compte bancaire ou mobile money</p>
                     </div>
-                    <Divider/>
+
                     <div class="column-list-item">
                         <img src={HandCashSVG} alt="hand_cash_icon"/>
                         <p>Achetez et vendez des crypto-monnaies</p>
@@ -163,6 +157,6 @@ export default function Home(){
                     <img src={GlobeSVG} alt="globe"/>
                 </div>
             </section>
-        </div>
+        </Layout>
     )
 }
