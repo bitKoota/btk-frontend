@@ -16,8 +16,29 @@ import BankSVG from "../../assets/svg/bank_icon.svg";
 
 import Layout from "../../components/layout";
 
+// Sections 
+import HeroSection from "./heroSection"; 
+import FeatureListWithImage from "./featureSectionWithImage";
+import FeatureSectionText from "./featureSectionText";
+import StepsSection from "./stepSection";
+import WaitList from "./waitlistCtaSection";
+import Footer from "../../components/footer";
+
 
 export default function Home(){
+    return (
+        <Layout>
+            <Nav/>
+            <HeroSection/>
+            <FeatureListWithImage/> 
+            <StepsSection/> 
+            <WaitList/> 
+            <Footer/>
+        </Layout>
+    )
+}
+
+function Home2(){
     
     let [email, setEmail ] = useState("");
 

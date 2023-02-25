@@ -22,13 +22,16 @@ export default function Nav(){
             rounded={true} 
         >
             <Navbar.Brand href="https://bitkoota.com/">
-                <img 
+                {/* <img 
                     src={BTKLogo} 
                     className="mr-3 h-6 md:h-9"
                     alt="Bitkoota logo" 
                     width={121} 
                     height={40}
-                />
+                /> */}
+                <a href="https://bitkoota.com" class="flex items-center">
+                        <img src={BTKLogo} class="mr-3 h-8" alt="bitkoota logo"/>
+                </a>
             </Navbar.Brand>
             
             <div className="flex md-order-1">
