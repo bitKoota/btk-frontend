@@ -3,7 +3,7 @@ import BackgroundImg from "./../../assets/img/background_footer.png";
 
 export default function WaitList(){
     return (
-        <div id="waitlist-banner" className="flex  bg-gray-100 w-full h-52  space-x-96">
+        <section id="waitlist-banner" className="flex  bg-gray-100 w-full   space-x-96 mb-5">
             <div id="waitlist-text-cta" className="justify-start text-left w-1/3 block ml-5">
                 <h1 className="text-black text-3xl mt-2">
                     Enregistrez vous à la file d'attente
@@ -12,13 +12,13 @@ export default function WaitList(){
                     Le lancement de la plateforme de trading interviendra bientôt, 
                     enregistez vous à la file d'attente pour recevoir toutes les mises à jour.
                 </p>
-                <Button className="mt-5">
+                <Button className="mt-5 mb-5">
                     S'enregistrer
                 </Button>
             </div>
-            <div id="waitlist-bg" className="justify-end">
-                <img className="h-52 object-right" src={BackgroundImg} alt=""/>
+            <div id="waitlist-bg" className="flex justify-end">
+                <img className="bg-none bg-right" src={BackgroundImg} alt=""/>
             </div>
-        </div>
+        </section>
     )
 }

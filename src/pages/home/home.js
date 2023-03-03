@@ -21,6 +21,7 @@ import HeroSection from "./heroSection";
 import FeatureListWithImage from "./featureSectionWithImage";
 import FeatureSectionText from "./featureSectionText";
 import StepsSection from "./stepSection";
+import ETABanner from "./etaBanner";
 import WaitList from "./waitlistCtaSection";
 import Footer from "../../components/footer";
 
@@ -30,8 +31,10 @@ export default function Home(){
         <Layout>
             <Nav/>
             <HeroSection/>
-            <FeatureListWithImage/> 
-            <StepsSection/> 
+            <FeatureListWithImage/>
+            <FeatureSectionText/> 
+            <StepsSection/>
+            <ETABanner/> 
             <WaitList/> 
             <Footer/>
         </Layout>

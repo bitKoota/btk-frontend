@@ -34,7 +34,7 @@ export default function Nav(){
                 </a>
             </Navbar.Brand>
             
-            <div className="flex md-order-1">
+            <div className="md-order-1">
                 <p>La plateforme est en cours de construction, veuillez vous enregistrer à la file d'attente</p>
             </div>
             
@@ -44,7 +44,7 @@ export default function Nav(){
                     className="text-white bg-blue-700 border border-transparent hover:bg-blue py-center p-0.5 text-center font-medium focus:z-10 rounded-lg">
                     S'enregistrer
                 </Button>
-                <Navbar.Toggle/>
+                
             </div>
             
         </Navbar>

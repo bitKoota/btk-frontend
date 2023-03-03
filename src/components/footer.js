@@ -10,7 +10,7 @@ export default function Footer(){
     return (
         <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
             <div className="mx-auto max-w-screen-xl">
-                <div className="mb-6 md:mb-0">
+                <div className="mb-15 md:mb-0">
                     <a href="https://bitkoota.com" class="flex items-center">
                         <img src={LogoSVG} class="mr-3 h-8" alt="bitkoota logo"/>
                     </a>
@@ -43,7 +43,7 @@ export default function Footer(){
             </div>
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"/>
             <div className="sm:flex sm:items-center sm:justify-between">
-                <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© {date} <a href="https://bitkoota.com" className="hover:underline">bitKoota</a></span>
+                <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2021-{date} <a href="https://bitkoota.com" className="hover:underline">bitKoota all rights reserved.</a></span>
             </div>
         </footer>
     )
