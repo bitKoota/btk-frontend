@@ -1,11 +1,21 @@
 const computeEta = () =>{
     let now = Date.now(); 
-    let releaseDate = new Date('2023-04-1'); 
-    let eta = releaseDate - now; 
-    //eta = new Date(eta);
-    return eta;
+    let releaseDate = new Date('2023-12-25'); 
+    let eta = computeRemaining(releaseDate) 
+    return eta; 
     
 
+}
+
+const computeRemaining = (endDate) => {
+    const totalMilliseconds = endDate - new Date(); 
+    const totalSeconds = Math.floor(totalMilliseconds / 1000); 
+    const totalMinutes = Math.floor(totalSeconds / 60); 
+    const totalHours = Math.floor(totalMinutes / 60); 
+    const days = Math.floor(totalHours / 24); 
+    const hours = totalHours % 24; 
+    const minutes = totalMinutes % 60; 
+    return `${days} jours : ${hours} heures  : ${minutes} minutes`
 }
 
 export default function ETABanner(){
@@ -19,7 +29,7 @@ export default function ETABanner(){
                 </h3>
                 <p className="text-white text-center m-5 text-2xl">Nous reviendrons dans: </p>
                 <p className="text-white text-center m-5 text-4xl">
-                    {eta} à 0h00
+                    {eta}
                 </p>
             </div>
             
